@@ -6,7 +6,7 @@ node_js:
 install:
   - npm install phantomjs-prebuilt@2.1.16 --ignore-scripts
   - npm install karma --save-dev
-  - npm install --save-dev webpack
+  - npm install --save-dev webpack-dev-server
 script:
   - npm test
 after_success:
