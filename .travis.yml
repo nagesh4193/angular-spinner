@@ -4,7 +4,7 @@ node_js:
   - 6.9.1
   - 14
 install:
-  - npm install phantom --save
+  - npm install -g phantomjs@2.1.1
 script:
   - npm test
 after_success:
