@@ -6,6 +6,7 @@ node_js:
 install:
   - npm install phantomjs-prebuilt@2.1.16 --ignore-scripts
   - npm install -SD karma-webpack webpack
+  - npm install -g karma-jasmine
 script:
   - npm test
 after_success:
