@@ -2,9 +2,13 @@ language: node_js
 sudo: false
 node_js:
   - 6.9.1
+  - 14
 install:
   - npm install
 script:
   - npm test
 after_success:
   - cat ./coverage/*/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+arch:
+  - amd64
+  - ppc64le
