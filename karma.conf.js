@@ -21,16 +21,15 @@ webpackConf.module.postLoaders = [
 module.exports = function (config) {
 	config.set({
 		basePath: '',
-		frameworks: ['jasmine', 'source-map-support'],
+		frameworks: ['source-map-support'],
 		logLevel: config.LOG_INFO,
 		browsers: ['PhantomJS'],
 		singleRun: true,
-		reporters: ['karma-jasmine', 'dots', 'coverage'], 
+		reporters: ['dots', 'coverage'], 
 		files: [
 			'node_modules/angular/angular.js',
 			'node_modules/angular-mocks/angular-mocks.js',
 			'src/angular-spinner.ts',
-			'lib/jasmine.js',
 			'test/index.ts'
 		],
 		webpack: webpackConf,
