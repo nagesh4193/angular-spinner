@@ -30,6 +30,7 @@ module.exports = function (config) {
 			'node_modules/angular/angular.js',
 			'node_modules/angular-mocks/angular-mocks.js',
 			'src/angular-spinner.ts',
+			'lib/jasmine.js',
 			'test/index.ts'
 		],
 		webpack: webpackConf,
