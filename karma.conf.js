@@ -21,7 +21,8 @@ webpackConf.module.postLoaders = [
 module.exports = function (config) {
 	config.set({
 		basePath: '',
-		frameworks: ['source-map-support'],
+		frameworks: ['jasmine', 'source-map-support'],
+		plugins: [require("karma-webpack"), require('karma-jasmine')],
 		logLevel: config.LOG_INFO,
 		browsers: ['PhantomJS'],
 		singleRun: true,
